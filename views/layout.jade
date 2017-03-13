@@ -9,7 +9,7 @@ html
         link(rel='stylesheet', href='/stylesheets/style.css')
     body
 
-        nav.navbar.navbar-inverse.navbar-fixed-top
+        nav.navbar.navbar-default.navbar-fixed-top
 
             .container
 
@@ -36,6 +36,11 @@ html
                             a(href='/users/logout') Logout
         .container
             block content
+
+        footer.footer
+            .container
+                p.text-muted &copy; 2017-18. All Rights Reserved. NodeAuth
+
 
         script (src='https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js')
         script (src='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js')

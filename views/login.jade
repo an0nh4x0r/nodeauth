@@ -1,0 +1,15 @@
+extends layout
+
+block content
+    h3(style='text-align: center') #{title}
+    .row
+        .col-md-6.col-lg-offset-3
+            form.well(method='post', action='/users/login', enctype='multipart/form-data')
+                .form-group
+                    label Username
+                    input.form-control(name='name', type='text', placeholder='Enter Username')
+                .form-group
+                    label Password
+                    input.form-control(name='password', type='password', placeholder='Enter Password')
+                input.btn.btn-primary(name='forgot password', type='button', value='forgot password')
+                input.pull-right.btn.btn-primary(name='submit', type='submit', value='Login')
