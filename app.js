@@ -8,8 +8,7 @@ var session = require('express-session');
 var passport = require('passport'),
     LocalStrategy = require('passport-local').Strategy;
 var bodyParser = require('body-parser');
-var multer = require('multer');
-var upload = multer({ dest: './uploads' });
+
 var flash = require('connect-flash');
 var mongo = require('mongodb');
 var mongoose = require('mongoose');
